@@ -1,0 +1,25 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "THREE.GLTFExporter"
+  },
+  "scenes": [
+    {
+      "nodes": [
+        1
+      ],
+      "name": "AuxScene"
+    }
+  ],
+  "scene": 0,
+  "nodes": [
+    {
+      "name": "Coat_of_Arms_v1"
+    },
+    {
+      "children": [
+        0
+      ]
+    }
+  ]
+}

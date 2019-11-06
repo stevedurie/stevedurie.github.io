@@ -1,0 +1,287 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    </head>
+    <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+    <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+
+    <!-- add this script in order to load a large set of 3D model extensions-->
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
+    <body style='margin : 0px; overflow: hidden;'>
+        <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
+        <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+
+        <a-assets>  <a-asset-item id="anim_asset0" src="models/coa_0.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset1" src="models/coa_1.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset2" src="models/coa_2.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset3" src="models/coa_3.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset4" src="models/coa_4.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset5" src="models/coa_5.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset6" src="models/coa_6.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset7" src="models/coa_7.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset8" src="models/coa_8.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset9" src="models/coa_9.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset10" src="models/coa_10.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset11" src="models/coa_11.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset12" src="models/coa_12.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset13" src="models/coa_13.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset14" src="models/coa_14.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset15" src="models/coa_15.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset16" src="models/coa_16.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset17" src="models/coa_17.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset18" src="models/coa_18.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset19" src="models/coa_19.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset20" src="models/coa_20.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset21" src="models/coa_21.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset22" src="models/coa_22.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset23" src="models/coa_23.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset24" src="models/coa_24.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset25" src="models/coa_25.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset26" src="models/coa_26.gltf"></a-asset-item>    </a-assets>
+
+
+        <!-- <a-marker type='barcode' value='0'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='1'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='2'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='3'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='4'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='5'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='6'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='7'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='8'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='9'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='10'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='11'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='12'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='13'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='14'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='15'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='16'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='17'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='18'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='19'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='20'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='21'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='22'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='23'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='24'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='25'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+        <a-marker type='barcode' value='26'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker> -->
+
+
+
+<!-- Negative X axis extends left. Positive X Axis extends right.	0
+y	Negative Y axis extends down. Positive Y Axis extends up.	0
+z	Negative Z axis extends in. Positive Z Axis extends out.	0 -->
+
+
+        <a-marker id="animated-marker" type='barcode' value='0'>
+            <a-entity gltf-model="#anim_asset0" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker>
+
+        <a-marker id="animated-marker" type='barcode' value='1'>
+            <a-entity gltf-model="#anim_asset1" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker>
+
+        <a-marker id="animated-marker" type='barcode' value='2'>
+            <a-entity gltf-model="#anim_asset2" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+        <a-marker id="animated-marker" type='barcode' value='3'>
+            <a-entity gltf-model="#anim_asset3" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker>
+
+        <a-marker id="animated-marker" type='barcode' value='4'>
+            <a-entity gltf-model="#anim_asset4" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker>
+
+        <a-marker id="animated-marker" type='barcode' value='5'>
+            <a-entity gltf-model="#anim_asset5" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+        <a-marker id="animated-marker" type='barcode' value='6'>
+            <a-entity gltf-model="#anim_asset6" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker>
+
+        <a-marker id="animated-marker" type='barcode' value='7'>
+            <a-entity gltf-model="#anim_asset7" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+        <a-marker id="animated-marker" type='barcode' value='8'>
+            <a-entity gltf-model="#anim_asset8" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+
+        <a-marker id="animated-marker" type='barcode' value='9'>
+            <a-entity gltf-model="#anim_asset9" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+        <a-marker id="animated-marker" type='barcode' value='10'>
+            <a-entity gltf-model="#anim_asset10" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+
+        <a-marker id="animated-marker" type='barcode' value='11'>
+            <a-entity gltf-model="#anim_asset11" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+        <a-marker id="animated-marker" type='barcode' value='12'>
+            <a-entity gltf-model="#anim_asset12" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+        <a-marker id="animated-marker" type='barcode' value='13'>
+            <a-entity gltf-model="#anim_asset13" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker>
+
+        <a-marker id="animated-marker" type='barcode' value='14'>
+            <a-entity gltf-model="#anim_asset14" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker>
+
+        <a-marker id="animated-marker" type='barcode' value='15'>
+            <a-entity gltf-model="#anim_asset15" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+        <a-marker id="animated-marker" type='barcode' value='16'>
+            <a-entity gltf-model="#anim_asset16" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker>
+
+        <a-marker id="animated-marker" type='barcode' value='17'>
+            <a-entity gltf-model="#anim_asset17" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+        <a-marker id="animated-marker" type='barcode' value='18'>
+            <a-entity gltf-model="#anim_asset18" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+
+        <a-marker id="animated-marker" type='barcode' value='19'>
+            <a-entity gltf-model="#anim_asset19" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+        <a-marker id="animated-marker" type='barcode' value='20'>
+            <a-entity gltf-model="#anim_asset20" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+
+        <a-marker id="animated-marker" type='barcode' value='21'>
+            <a-entity gltf-model="#anim_asset21" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+        <a-marker id="animated-marker" type='barcode' value='22'>
+            <a-entity gltf-model="#anim_asset22" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+
+        <a-marker id="animated-marker" type='barcode' value='23'>
+            <a-entity gltf-model="#anim_asset23" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+
+        <a-marker id="animated-marker" type='barcode' value='24'>
+            <a-entity gltf-model="#anim_asset24" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+        <a-marker id="animated-marker" type='barcode' value='25'>
+            <a-entity gltf-model="#anim_asset25" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+        <a-marker id="animated-marker" type='barcode' value='26'>
+            <a-entity gltf-model="#anim_asset26" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker> -->
+
+
+
+
+
+
+
+
+
+        <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
+        <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>
