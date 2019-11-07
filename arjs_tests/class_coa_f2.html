@@ -1,0 +1,105 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    </head>
+    <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+    <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+
+    <!-- add this script in order to load a large set of 3D model extensions-->
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
+    <body style='margin : 0px; overflow: hidden;'>
+        <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
+        <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+
+        <a-assets>  <a-asset-item id="anim_asset13" src="models/coa_13.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset14" src="models/coa_14.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset15" src="models/coa_15.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset16" src="models/coa_16.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset17" src="models/coa_17.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset18" src="models/coa_18.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset19" src="models/coa_19.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset20" src="models/coa_20.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset21" src="models/coa_21.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset22" src="models/coa_22.gltf"></a-asset-item>    </a-assets>
+        <!-- <a-assets>  <a-asset-item id="anim_asset23" src="models/coa_23.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset24" src="models/coa_24.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset25" src="models/coa_25.gltf"></a-asset-item>    </a-assets>
+        <a-assets>  <a-asset-item id="anim_asset26" src="models/coa_26.gltf"></a-asset-item>    </a-assets>  -->
+
+
+<!-- Negative X axis extends left. Positive X Axis extends right.	0
+y	Negative Y axis extends down. Positive Y Axis extends up.	0
+z	Negative Z axis extends in. Positive Z Axis extends out.	0 -->
+
+
+
+
+        <!-- g Lee,Calvin    13 -->
+        <a-marker id="animated-marker" type='barcode' value='13'>
+            <a-entity gltf-model="#anim_asset13" scale=".40 .40 .40" rotation="-90 0 0"  position=".5 0 0" >
+            </a-entity>
+          </a-marker>
+
+        <!-- e Linder,Ashley   14 -->
+        <a-marker id="animated-marker" type='barcode' value='14'>
+            <a-entity gltf-model="#anim_asset14" scale=".50 .50 .50" rotation="-90 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker>
+
+        <!-- e Liu,Charli 15 -->
+        <a-marker id="animated-marker" type='barcode' value='15'>
+            <a-entity gltf-model="#anim_asset15" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker>
+
+        <!-- e Manabe,Hannah    16 -->
+        <a-marker id="animated-marker" type='barcode' value='16'>
+            <a-entity gltf-model="#anim_asset16" scale=".50 .50 .50" rotation="0 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker>
+
+        <!-- g Meek,Kohl  17 -->
+        <a-marker id="animated-marker" type='barcode' value='17'>
+            <a-entity gltf-model="#anim_asset17" scale=".03 .03 .03" rotation="-90 0 0"  position="0 0 0" >
+            </a-entity>
+        </a-marker>
+
+        <!-- g Moreno Guzman,Juan 18 -->
+        <a-marker id="animated-marker" type='barcode' value='18'>
+            <a-entity gltf-model="#anim_asset18" scale=".50 .50 .50" rotation="0 0 0"  position="-1 0 -1" >
+            </a-entity>
+        </a-marker>
+
+        <!-- g Regalado,Jacqueline  19 -->
+        <a-marker id="animated-marker" type='barcode' value='19'>
+            <a-entity gltf-model="#anim_asset19" scale="1.2 1.2 1.2" rotation="-90 0 0"  position="-1.5 0 -0.5" >
+            </a-entity>
+        </a-marker>
+
+        <!-- g Rose,Ashley   20 -->
+        <a-marker id="animated-marker" type='barcode' value='20'>
+            <a-entity gltf-model="#anim_asset20" scale=".20 .20 .20" rotation="-90 0 0"  position="0 0 -1" >
+            </a-entity>
+        </a-marker>
+
+        <!-- g Sokry,Anthony 21 -->
+        <a-marker id="animated-marker" type='barcode' value='21'>
+            <a-entity gltf-model="#anim_asset21" scale="1 1 1" rotation="-90 0 0"  position="-1.5 0 -1.5" >
+            </a-entity>
+        </a-marker>
+
+        <!-- g Tran,Jacob 22 -->
+        <a-marker id="animated-marker" type='barcode' value='22'>
+            <a-entity gltf-model="#anim_asset22" scale=".90 .90 .90" rotation="0 0 0"  position="-2 0 -1" >
+            </a-entity>
+        </a-marker>
+
+
+
+        <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
+        <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>
